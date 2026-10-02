@@ -1,0 +1,153 @@
+# =============================================================================
+# Secrets
+# =============================================================================
+# Real ESPHome secrets. Only secrets.yaml.example is committed.
+secrets.yaml
+secrets.yml
+.env
+.env.*
+!.env.example
+
+# =============================================================================
+# KiCad
+# =============================================================================
+# Local history snapshots (KiCad 9+)
+.history/
+
+# Backups and autosave
+*-backups/
+*.bak
+*.bck
+*.kicad_pcb-bak
+*.kicad_sch-bak
+*-bak
+*~
+_autosave-*
+\#auto_saved_files#
+
+# Lock files, created while a project is open
+*.lck
+~*.lck
+
+# Per-user project state (open sheets, layer visibility, zoom, ...)
+*.kicad_prl
+*.prl
+
+# Caches
+fp-info-cache
+*.kicad_pcb.cache
+*-cache.lib
+*-cache.dcm
+
+# Legacy (KiCad 5) leftovers
+*-rescue.lib
+*-rescue.dcm
+*.sch-bak
+*.pro-bak
+*.net
+*.dsn
+*.ses
+
+# Check reports (ERC/DRC), including the KiCad MCP server's
+*.rpt
+*-erc.rpt
+*-drc.rpt
+*_drc_violations.json
+*_erc_violations.json
+
+# Fabrication outputs - generate from the design, attach to GitHub releases
+gerbers/
+gerber/
+fabrication/
+production/
+jlcpcb/
+*.gbr
+*.gbrjob
+*.gtl
+*.gbl
+*.gto
+*.gbo
+*.gts
+*.gbs
+*.gtp
+*.gbp
+*.gm1
+*.g1
+*.g2
+*.drl
+*.xln
+*-job.gbrjob
+*-pos.csv
+*-all-pos.csv
+*.zip
+
+# =============================================================================
+# ESPHome
+# =============================================================================
+# Build directory and generated sources/firmware
+.esphome/
+/.pioenvs/
+/.piolibdeps/
+.pio/
+*.bin
+*.elf
+*.factory.bin
+
+# =============================================================================
+# Python (helper scripts, virtual environments)
+# =============================================================================
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# =============================================================================
+# Editors and IDEs
+# =============================================================================
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*.code-workspace
+.fleet/
+.zed/
+
+# =============================================================================
+# Operating systems
+# =============================================================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+# Linux
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Sync clients (project lives in Nextcloud)
+# =============================================================================
+.sync_*.db*
+._sync_*.db*
+.owncloudsync.log*
+*.~lock.*#
+.~lock.*#
+
+# =============================================================================
+# Local AI tooling configuration (machine-specific paths)
+# =============================================================================
+.claude/
+.mcp.json
+CLAUDE.local.md
+.codegraph/
+.serena/
